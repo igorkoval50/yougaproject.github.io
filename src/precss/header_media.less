@@ -13,23 +13,14 @@
 	.navigation {
 		display: none;
 	}
-	.nav_min {
-		position: absolute;
-		display: none;
-		text-align: center;
-		ul li {
-			padding-top: 10px;
-		}
-			a {
-			color:  #555555;
-			font-size: 1.4rem;
-			.semibold;
-			text-decoration: none;
-			&:hover {
-				transition: 0.3s;
-				background-color:  #5363db;
-			}
-		}
+	.menu-link {
+		display: block;
+		margin-top: -10px;
 	}
   }
+}
+@media (min-width: 656px) and (max-width: 1920px) {
+	.menu {
+		display: none !important;
+	}
 }
