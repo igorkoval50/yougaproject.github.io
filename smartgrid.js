@@ -1,8 +1,8 @@
 const smartgrid = require('smart-grid');
 
 const settings = {
-    columns: 24,
-    offset: '10px',
+    columns: 12,
+    offset: '30px',
     container: {
         maxWidth: '960px',
         fields: '30px'

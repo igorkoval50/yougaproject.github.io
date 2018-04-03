@@ -124,7 +124,7 @@
 }
 .menu {
 	opacity: 0.9;
-	z-index: 1;
+	z-index: 99;
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
@@ -160,19 +160,17 @@
 			background-color:rgba(255, 255, 255, .4);
 		}
 	}
-	}
+   }
+  }
 }
-}
-
+////////SECTION HEADER/////////////////
 header {
 	position: relative;
   	z-index: 5;
-	color: #fff;
-	height: 100vh;
-	min-height: 700px;
+	height: 96vh;
+	min-height: 600px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 	.wrap {
 	  position: absolute;
 	  z-index: -1;
@@ -180,11 +178,93 @@ header {
 	  bottom: 0;
 	  left: 0;
 	  right: 0;
-	  background: #414140;
+	  background: #5465de;
 	  background-position: center;
 	  opacity: 0.7;
 	  width: 100%;
 	  height: 100%;
 	}
+	.header-inf {
+		.row-flex();
+	}
+	.send-form {
+	  .col();
+	  .size(4);
+	  background-color: #fff;
+	  position: relative;
+	  top: 100px;
+	  width: 30rem;
+	  height: 39rem;
+	  border-radius: 20px;
+	  background-color:  #ffffff;
+	  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+	  h3 {
+	  	margin-left: 2rem;
+	  	padding-top: 3rem;
+	  	color:  #5363db;
+		font-size: 2.564rem;
+		.semibold;
+	  }
+	  input {
+	  	margin-left: 2rem;
+	  	outline: none;
+	  	margin-top: 1rem;
+	  	padding-left: 1rem;
+	  	border-radius: 8px;
+		background-color:  #f2f2f2;
+		width: 23rem;
+		height: 5rem;
+		border: none;
+		font-family: OpenSans;
+		color:  #888888;
+		font-size: 1.4rem;
+	  }
+	  input:focus:required:invalid {
+		  border: 1px solid red;
+		}
+		input:focus:valid {border-color: 1px solid green;}
+	  select {
+	  	margin-left: 2rem;
+	  	cursor: pointer;
+	  	outline: none;
+	  	margin-top: 1rem;
+	  	padding-left: 1rem;
+	  	border-radius: 8px;
+		background-color:  #f2f2f2;
+		width: 24rem;
+		height: 5rem;
+		border: none;
+		font-family: OpenSans;
+		color:  #888888;
+		font-size: 1.4rem;
+	  }
+	  .btn {
+	  	margin-top: 4rem;
+	  	margin-left: 9rem;
+	  }
+	}
+	.inf {
+		.col();
+	  	.size(8);
+	  	.size-sm(12);
+	  	margin-left: 10rem;
+	  	width: 48.5rem;
+		position: relative;
+		top: 160px;
+		h1 {
+			color:  #ffffff;
+			font-size: 4.8rem;
+			.bold;
+			text-transform: uppercase;
+		}
+		p {
+			margin-top: 30px;
+			.script;
+			font-size: 4rem;
+			color: #fff;
+			width: 30.8rem;
+		}
+	}
 }
+
 
