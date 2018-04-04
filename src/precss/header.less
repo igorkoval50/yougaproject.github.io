@@ -79,14 +79,14 @@
 		}
 	}
 .menu-link {
-	z-index: 9;
+	z-index: 11;
 	width: 50px;
 	height: 50px;
 	display: none;
 	background-color: #fff;
 	border-radius: 50%;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
-	position: fixed;
+	position: absolute;
 	right: 20px;
 	top: 30px;
 	span, span:before, span:after {
@@ -123,8 +123,9 @@
 	}
 }
 .menu {
+	margin-top: -80px;
 	opacity: 0.9;
-	z-index: 99;
+	z-index: 9;
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
@@ -133,7 +134,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	right: -100vw;
+	right: -120vw;
 	transition: all 0.4s;
 	&-active {
 		right: 0;

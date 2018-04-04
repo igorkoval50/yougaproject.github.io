@@ -1,3 +1,4 @@
+/////RESPONSIVE MENU ////////////
 $(function() {
 	var link = $(".menu-link");
 	var linkActive = $(".menu-link_active");
