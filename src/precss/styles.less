@@ -168,12 +168,117 @@ section#about {
 	}
 	.about-slider {
 		.item {
+			position: relative;
 			width: 57rem;
 			height: 30rem;
+			button {
+				position: absolute;
+				outline: none;
+				background-color: #fff;
+				border: none;
+				width: 5rem;
+				height: 5rem;
+				border-radius: 50%;
+			}
+			.prev {
+				top: 40%;
+				left: -10px;
+			}
+			.next {
+				top: 40%;
+				right: -10px;
+			}
+
 		}
 	}
 }
 
-
-
-
+///////SECTION ADVANTAGES//////////////////////
+section#advantages{
+	height: 100vh;
+	min-height: 700px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+  	z-index: 5;
+  	color: #fff;
+  	.wrap {
+	  position: absolute;
+	  z-index: -1;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background: #5465de;
+	  background-position: center;
+	  opacity: 0.7;
+	  width: 100%;
+	  height: 100%;
+	}
+	.row {
+		.row-flex();
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.advantages-item {
+		display: flex;
+		flex-direction: column;
+		padding-top: 70px;
+		.col();
+		.size(3);
+		.size-md(4);
+		.size-sm(6);
+		justify-content: center;
+		text-align: center;
+		a {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			width: 70px;
+			height: 70px;
+			border: 1px solid #fff;
+			border-radius: 50%;
+		}
+		img {
+			top: 20px;
+			left: 15px;
+			position: absolute;
+			background-position: top center;
+		}
+		h3 {
+			font-size: 1.8rem;
+			.bold;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 1.6rem;
+			.regular;
+			margin: auto 10px 10px 10px;
+			align-self: flex-end;
+		}
+		.two {
+			left: 13px;
+		}
+		.three {
+			top: 10px;
+			left: 12px;
+		}
+		.four {
+			left: 20px;
+			top: 16px;
+		}
+		.six {
+			left: 27px;
+			top: 12px;
+		}
+		.seven {
+			left: 10px;
+			top: 19px;
+		}
+		.eight {
+			left: 20px;	
+		}
+	}
+}
