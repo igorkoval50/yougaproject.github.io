@@ -282,3 +282,97 @@ section#advantages{
 		}
 	}
 }
+
+/////////SECTION PRICE//////////////////////
+section#price {
+	height: 100vh;
+	min-height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+	.row {
+		.row-flex();
+		.sm-block ({
+			justify-content: center;
+			});
+	}
+	.price-all {
+		text-align: center;
+		.col();
+		.size(4);
+		.size-sm(9);
+		height: 49.3rem;
+		margin-top: 100px;
+		.sm-block({
+			margin-top: 40px;
+			});
+		.price-header:hover {
+			background-color: red;
+		}
+	}
+	.price {
+		&-header {
+			color:  #ffffff;
+			height: 15rem;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			background-color:  #5b6ceb;
+			h2 {
+				margin-top: 2.5rem;
+				.bold;
+				font-size: 5.735rem;
+				display: inline-block;
+			}
+			span {
+				vertical-align: 0.7rem;
+				text-transform: uppercase;
+				font-size: 3.2rem;
+				.bold;
+			}
+			.month {
+				font-size: 1.8rem;
+				vertical-align: 0;
+			}
+		}
+		&-body {
+			padding-top: 40px;
+			height: 30.3rem;
+			border-radius: 10px;
+			background-color:  #ffffff;
+			box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+			p {
+				.regular;
+				color:  #555555;
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+			}
+			span {
+				margin: 0 auto;
+				display: block;
+				background-color: #555555;
+				height: 1px;
+				width: 10rem;
+				margin-bottom: 25px;
+			}
+			.bts {
+				margin: 0 auto;
+				margin-top: 4rem;
+				text-align: center;
+				vertical-align: 20px;
+				cursor: pointer;
+				display: block;
+				border-radius: 20px;
+				background-color:  #5b6ceb;
+				width: 17rem;
+				height: 4rem;
+				padding-top: 1rem;
+				color:  #ffffff;
+				font-size: 1.8rem;
+				.semibold;
+				&:hover {
+					background-color: #2FCED8;
+				}
+			}
+		}
+	}
+}
