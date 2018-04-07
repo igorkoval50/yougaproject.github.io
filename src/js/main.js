@@ -17,6 +17,27 @@ $(function() {
 		link.toggleClass('menu-link_active');
 	});
 
+	////////NAVIGATION FIXED /////////
+	    var headerH = $("#js-header").height(),
+        navH = $("#nav").innerHeight();
+
+    $(document).on("scroll", function() {
+
+        var documentScroll = $(this).scrollTop();
+
+        if(documentScroll > headerH) {
+            $("#nav").addClass("fixed");
+
+            $("#js-header").css({
+                "paddingTop": navH
+            });
+        } else {
+            $("#nav").removeClass("fixed");
+            $("#js-header").removeAttr("style");
+        }
+
+    });
+
 
 
 
