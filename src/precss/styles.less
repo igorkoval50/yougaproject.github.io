@@ -560,8 +560,6 @@ section#contacts {
 	.row {
 		padding-top: 100px;
 		.row-flex();
-		justify-content: center;
-		text-align: center;
 		.sm-block({
 			padding-top: 20px;
 			})
@@ -572,6 +570,8 @@ section#contacts {
 		.size-sm(8);
 		.sm-block ({
 			margin-bottom: 2rem;
+			margin: 0 auto;
+			text-align: center;
 			});
 		h2 {
 			margin-bottom: 5rem;
@@ -583,12 +583,17 @@ section#contacts {
 		}
 		.pin {
 			padding-left: 0;
+			margin-bottom: 20px;
 		}
 	}
 	.contacts-inf {
 		.col();
 		.size(3);
 		.size-sm(8);
+		.sm-block ({
+			margin: 0 auto;
+			text-align: center;
+			});
 		h2 {
 			margin-bottom: 5rem;
 		}
@@ -604,5 +609,29 @@ section#contacts {
 		.phone {
 			margin-left: 2.5rem;
 		}
+	}
+}
+////////////fOOTER////////////
+footer {
+	height: 180px;
+	background-color:  #5363d8;
+	.row {
+		margin: 0 auto;
+	}
+	p {
+		text-align: center;
+		color:  #b7bffc;
+		font-size: 1.6rem;
+		.regular;
+		padding-top: 5rem;
+	}
+	a {
+		text-decoration: none;
+		.proxi;
+		margin-top: 2rem;
+		display: block;
+		text-align: center;
+		color:  #b8c0fc;
+		font-size: 2rem;
 	}
 }
